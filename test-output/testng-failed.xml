@@ -5,8 +5,8 @@
     <classes>
       <class name="Test.buscarCancion">
         <methods>
+          <include name="buscarCancionTest"/>
           <include name="setUp"/>
-          <include name="testUntitled"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Test.buscarCancion -->

@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import java.net.URL;
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 public class pararCancion {
@@ -35,10 +36,14 @@ public class pararCancion {
 	}
 
 	@Test
-	public void testUntitled() {
+	public void pararCancionTest() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='cover_image']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='play_pause_button']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='play_pause_button']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@AfterMethod

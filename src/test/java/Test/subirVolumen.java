@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import java.net.URL;
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 public class subirVolumen {
@@ -36,16 +37,26 @@ public class subirVolumen {
 	}
 
 	@Test
-	public void testUntitled() {
+	public void subirVolumenTest() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='cover_image']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='connect_entry_point_button']")));
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='connect_entry_point_button']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='close_picker_icon']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='play_pause_button']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='connect_entry_point_button']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='volume_slider']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='close_picker_icon']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='play_pause_button']")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@AfterMethod

@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import java.net.URL;
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 
@@ -37,34 +38,49 @@ public class buscarCancion{
     }
 
     @Test
-    public void testUntitled() {
-        driver.findElement(By.xpath("//*[@contentDescription='Search']")).click();
+    public void buscarCancionTest() {
+    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    	driver.findElement(By.xpath("//*[@contentDescription='Search']")).click();
+    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@text='Artists, songs, or podcasts']")).click();
-        driver.findElement(By.xpath("//*[@text='a']")).click();
-        driver.findElement(By.xpath("//*[@text='l']")).click();
-        driver.findElement(By.xpath("//*[@text='w']")).click();
-        driver.findElement(By.xpath("//*[@text='a']")).click();
-        driver.findElement(By.xpath("//*[@text='y']")).click();
-        driver.findElement(By.xpath("//*[@text='s']")).click();
-        driver.findElement(By.xpath("//*[@text='Español (US)']")).click();
-        driver.findElement(By.xpath("//*[@text='b']")).click();
-        driver.findElement(By.xpath("//*[@text='o']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='n']")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@text='n']")).click();
-        driver.findElement(By.xpath("//*[@text='Español (US)']")).click();
-        driver.findElement(By.xpath("//*[@text='j']")).click();
-        driver.findElement(By.xpath("//*[@text='o']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='a']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@text='v']")).click();
-        driver.findElement(By.xpath("//*[@text='i']")).click();
-        driver.findElement(By.xpath("//*[@id='search_body']")).click();
-        new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//*[@id='search_body']/*/*/*[@id='icon'])[1]")));
-        driver.findElement(By.xpath("(//*[@id='search_body']/*/*/*[@id='icon'])[1]")).click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='button_play_and_pause']")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='e']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='Español (US)']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='d']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='e']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='l']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='Español (US)']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@text='o']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@id='icon' and (./preceding-sibling::* | ./following-sibling::*)[./*[@text='La Nave del Olvido']]]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='button_play_and_pause']")).click();
-        new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='track_info_view']")));
-        driver.findElement(By.xpath("//*[@id='track_info_view']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='cover_image']")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//*[@id='cover_image']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='play_pause_button']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+
     }
 
+    
     @AfterMethod
     public void tearDown() {
         driver.quit();

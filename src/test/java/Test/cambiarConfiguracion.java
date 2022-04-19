@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import java.net.URL;
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 public class cambiarConfiguracion {
@@ -35,11 +36,16 @@ public class cambiarConfiguracion {
     }
 
     @Test
-    public void testUntitled() {
+    public void cambiarConfiguracionTest() {
+    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='home_toolbar_settings']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='settings_menu_toggle' and ./parent::*[(./preceding-sibling::* | ./following-sibling::*)[./*[@text='Audio Quality']]]]")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='settings_menu_toggle' and ./parent::*[(./preceding-sibling::* | ./following-sibling::*)[./*[@text='Audio Quality']]]]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='settings_menu_toggle' and ./parent::*[(./preceding-sibling::* | ./following-sibling::*)[./*[@text='Download audio only']]]]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='settings_menu_toggle' and ./parent::*[(./preceding-sibling::* | ./following-sibling::*)[./*[@text='Stream audio only']]]]")).click();
     }
 

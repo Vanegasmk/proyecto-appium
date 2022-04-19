@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import java.net.URL;
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 public class buscarGenero {
@@ -36,18 +37,30 @@ public class buscarGenero {
     }
 
     @Test
-    public void testUntitled() {
+    public void buscarGeneroTest() {
+    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@contentDescription='Search']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@text='Artists, songs, or podcasts']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@class='android.widget.LinearLayout' and ./*[@text='Recent searches']]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='query']")).sendKeys("bachata");
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Genres & Moods']")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@text='Genres & Moods']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@text='Bachata']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='icon' and (./preceding-sibling::* | ./following-sibling::*)[@text='Bachatéame']]")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='button_play_and_pause']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='play_pause_button']")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='play_pause_button']")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @AfterMethod

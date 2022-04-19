@@ -1,104 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-18T14:57:56 CST" name="Default suite" finished-at="2022-04-18T14:58:21 CST" duration-ms="24409">
+  <suite started-at="2022-04-19T00:13:25 CST" name="Default suite" finished-at="2022-04-19T00:14:19 CST" duration-ms="53843">
     <groups>
     </groups>
-    <test started-at="2022-04-18T14:57:56 CST" name="Default test" finished-at="2022-04-18T14:58:21 CST" duration-ms="24409">
+    <test started-at="2022-04-19T00:13:25 CST" name="Default test" finished-at="2022-04-19T00:14:19 CST" duration-ms="53843">
       <class name="Test.buscarCancion">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.buscarCancion@703580bf]" started-at="2022-04-18T14:57:56 CST" name="setUp" finished-at="2022-04-18T14:58:09 CST" duration-ms="12448" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.buscarCancion@703580bf]" started-at="2022-04-19T00:13:25 CST" name="setUp" finished-at="2022-04-19T00:13:33 CST" duration-ms="8582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUntitled()[pri:0, instance:Test.buscarCancion@703580bf]" started-at="2022-04-18T14:58:09 CST" name="testUntitled" finished-at="2022-04-18T14:58:18 CST" duration-ms="8591" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@contentDescription='Search']'))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-RL85JAP', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .MainActivity, appBuildVersion: , appPackage: com.spotify.music, appReleaseVersion: , appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, commandTimeouts: 120000, desired: {appActivity: .MainActivity, appPackage: com.spotify.music, platformName: Android, reportDirectory: reports, reportFormat: xml, testName: Untitled, udid: R9JN30PFYLJ}, device.category: PHONE, device.majorVersion: 11, device.manufacture: samsung, device.model: SM-A115M, device.name: SM-A115M, device.os: Android, device.screenSize: 720x1560, device.serialNumber: R9JN30PFYLJ, device.version: 11.0, deviceUDID: R9JN30PFYLJ, dontGoHomeOnQuit: false, dontStopAppOnReset: false, fullReset: false, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600, noReset: false, platform: ANDROID, platformName: Android, projectName: , reportDirectory: reports, reportFormat: xml, reportUrl: C:\Users\Kevin Vanegas Medi..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: Untitled, udid: R9JN30PFYLJ, useKeystore: false, waitForDeviceTimeout: 120000}
-Session ID: 943f4307-b42d-49f8-b779-1e781b607014
-*** Element info: {Using=xpath, value=//*[@contentDescription='Search']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@contentDescription='Search']'))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-RL85JAP', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .MainActivity, appBuildVersion: , appPackage: com.spotify.music, appReleaseVersion: , appiumVersion: 1.8.0, applicationClearData: false, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, commandTimeouts: 120000, desired: {appActivity: .MainActivity, appPackage: com.spotify.music, platformName: Android, reportDirectory: reports, reportFormat: xml, testName: Untitled, udid: R9JN30PFYLJ}, device.category: PHONE, device.majorVersion: 11, device.manufacture: samsung, device.model: SM-A115M, device.name: SM-A115M, device.os: Android, device.screenSize: 720x1560, device.serialNumber: R9JN30PFYLJ, device.version: 11.0, deviceUDID: R9JN30PFYLJ, dontGoHomeOnQuit: false, dontStopAppOnReset: false, fullReset: false, install.only.for.update: false, installOnlyForUpdate: false, instrumentApp: false, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600, noReset: false, platform: ANDROID, platformName: Android, projectName: , reportDirectory: reports, reportFormat: xml, reportUrl: C:\Users\Kevin Vanegas Medi..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: Untitled, udid: R9JN30PFYLJ, useKeystore: false, waitForDeviceTimeout: 120000}
-Session ID: 943f4307-b42d-49f8-b779-1e781b607014
-*** Element info: {Using=xpath, value=//*[@contentDescription='Search']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at Test.buscarCancion.testUntitled(buscarCancion.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="buscarCancionTest()[pri:0, instance:Test.buscarCancion@703580bf]" started-at="2022-04-19T00:13:33 CST" name="buscarCancionTest" finished-at="2022-04-19T00:14:15 CST" duration-ms="41471" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUntitled -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.buscarCancion@703580bf]" started-at="2022-04-18T14:58:18 CST" name="tearDown" finished-at="2022-04-18T14:58:21 CST" duration-ms="3321" status="PASS">
+        </test-method> <!-- buscarCancionTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.buscarCancion@703580bf]" started-at="2022-04-19T00:14:15 CST" name="tearDown" finished-at="2022-04-19T00:14:19 CST" duration-ms="3748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
